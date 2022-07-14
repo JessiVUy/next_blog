@@ -1,0 +1,101 @@
+{
+  "registros": [
+    {
+      "id": 1,
+      "nombre": "paola",
+      "tel": "099999999",
+      "email": "prueba@gmail.com",
+      "contraseña": "123"
+    },
+    {
+      "id": 2,
+      "nombre": "julio",
+      "tel": "099999999",
+      "email": "prueba@gmail.com",
+      "contraseña": "123"
+    },
+    {
+      "id": 3,
+      "nombre": "Julia",
+      "tel": "099999999",
+      "email": "prueba@gmail.com",
+      "contraseña": "123"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "celular",
+      "categoria": "tecnologia",
+      "precio": "$15000",
+      "stock": 5
+    },
+    {
+      "nombre": "monitor",
+      "categoria": "tecnologia",
+      "precio": "20600",
+      "stock": 3,
+      "id": 4
+    },
+    {
+      "nombre": "mochilaaaa",
+      "categoria": "escolares",
+      "precio": "80",
+      "stock": 2,
+      "id": 3
+    },
+    {
+      "nombre": "celular 20",
+      "precio": "20",
+      "stock": "19",
+      "id": 2
+    },
+    {
+      "nombre": "",
+      "precio": "50",
+      "stock": "50",
+      "id": 5
+    },
+    {
+      "nombre": "ggg",
+      "precio": "20",
+      "stock": "101",
+      "id": 6
+    },
+    {
+      "nombre": "pruebaaa111",
+      "categoria": "Escolares",
+      "precio": "30",
+      "stock": "20",
+      "id": 7
+    },
+    {
+      "nombre": "pruebaaa",
+      "categoria": "Escolares",
+      "precio": "30",
+      "stock": "20",
+      "id": 8
+    },
+    {
+      "nombre": "pruebaaa",
+      "categoria": "Escolares",
+      "precio": "30",
+      "stock": "20",
+      "id": 9
+    },
+    {
+      "nombre": "cambioo33333",
+      "categoria": "tecnologia",
+      "precio": "30",
+      "stock": "500000",
+      "id": 10
+    },
+    {
+      "nombre": "cambio2fffff",
+      "categoria": "Escolares",
+      "precio": "30",
+      "stock": "20",
+      "id": 11
+    }
+  ]
+}
