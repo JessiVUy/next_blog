@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Select from 'react-select';
 import { useState } from 'react';
-import axios from 'axios'
+import producServices from '../services/product'
 
 const FormProduc = (props)=>{
 
@@ -27,7 +27,8 @@ const FormProduc = (props)=>{
             stock:produc.stock
         }
         console.log('obj',obj)
-       axios.post('http://localhost:3001/productos', obj)
+
+        producServices.create(obj)
             .then(response=>{
                 props.newProduct(response.data)
                 //setProductos(productos.concat(response.data))

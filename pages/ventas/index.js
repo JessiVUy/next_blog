@@ -5,7 +5,8 @@ export default function Contactos () {
     return(
         <>
         <Nav></Nav>
-        <h1>CONTACTOS</h1>
+        <h1>VENTA</h1>
+        
         </>
     )
 }

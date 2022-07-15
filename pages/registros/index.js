@@ -5,6 +5,7 @@ import Table from "../../components/table";
 import registroServices from '../../services/registro'
 import { FaSearch } from 'react-icons/fa';
 import styles from '../../styles/Home.module.css'
+import Form from '../../components/form'
 
 const Registros = ()=>{
 
@@ -25,17 +26,30 @@ const Registros = ()=>{
         setBusar(event.target.value)
     }
 
+    const newRegistro = (props) => {
+        console.log('index registro', props)
+        setRegistros(registros.concat(props))
+    }
+
+   
+
     return(
         <>
-            <Nav></Nav>
-            <h1>REGISTRO</h1>
-            <div className={styles.buscador}>
-                <label>
-                    <input onChange={buscarx} placeholder="Buscar"></input>
-                </label>
-                <FaSearch></FaSearch>
+            <Nav/>
+            <h1 className={styles.h1}>REGISTRO</h1>
+            <div className={styles.contenedorForm}>
+                <div className={styles.contenedorBuscador}>
+                    <div className={styles.buscador}>
+                        <input className={styles.input} onChange={buscarx} placeholder="Buscar"></input>
+                        <FaSearch className={styles.icon}></FaSearch>
+                    </div>
+                    <Table props={registros} filter={buscar}/>
+                </div>
+                <div>
+                    <h3>Agregar registro</h3>
+                    <Form newRegistro={newRegistro}/>
+                </div>
             </div>
-            <Table props={registros} filter={buscar}/>
         </>
     )
 }

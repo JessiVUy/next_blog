@@ -17,6 +17,7 @@
   justify-content: space-around;
   color: white;
   font-size: 20px;
+  box-shadow: 0 1px 2px 0 cadetblue;
 }
 
 
@@ -40,6 +41,7 @@
 .contenedorButton{
   display: flex;
   align-items: flex-start;
+
 }
 .button{
   text-align: center;
@@ -128,6 +130,7 @@
   width: 20%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
  
 }
 
@@ -164,7 +167,7 @@
 
 .h5{
   margin: 0px;
-  font-size: 1.5rem;
+  font-size: 100%;
   color:cadetblue; 
 }
 
@@ -203,5 +206,43 @@
 .buscador{
   margin: 5px;
   display: flex;
+  /*align-items: center;*/
+  justify-content: center;
   align-items: center;
 }
+
+.contenedorForm{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.lableBus{
+  margin: 5px;
+}
+
+.icon{
+  margin: 5px;
+  color: cadetblue;
+}
+
+.inputBuscador{
+  border: solid 2px;
+}
+
+.contenedorBuscador{
+  width: 50%;
+}
+
+.table{
+  border: solid 1px rgb(234, 237, 235);
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 cadetblue;
+  width: 100%;
+  padding: 2px 0 2px 20px;
+}
+
+.fila{
+  border: solid 1px cadetblue; ;
+}
+
