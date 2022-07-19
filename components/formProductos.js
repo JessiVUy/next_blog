@@ -18,7 +18,6 @@ const FormProduc = (props)=>{
     ];
 
     const addProduct = (event)=>{
-        console.log('addProduct', event)
         event.preventDefault()
         const obj = {
             nombre: produc.nombre,
@@ -26,7 +25,6 @@ const FormProduc = (props)=>{
             precio: produc.precio,
             stock:produc.stock
         }
-        console.log('obj',obj)
 
         producServices.create(obj)
             .then(response=>{
@@ -44,13 +42,11 @@ const FormProduc = (props)=>{
     }
 
     const handleChange = (event) => {
-        console.log('event',event)
         setProduct({ ...produc, [event.target.name]: event.target.value });
-        console.log('handleChange',produc)
     };
 
     const handleChangeCat = (event) => {
-        console.log(event)
+      
         setProduct({...produc,[event.name]:event.value})
     }
     

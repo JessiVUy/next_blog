@@ -13,16 +13,13 @@ export default function Productos () {
     useEffect(()=>{
         producServices.getAll().then(
             response=>{
-                console.log(response.data)
                 setProductos(response.data)
             }
         )
     },[])
 
     const newProduct= (props)=>{
-        console.log('nuevo producto')
         setProductos(productos.concat(props))
-        
     }
 
     return(
@@ -33,7 +30,7 @@ export default function Productos () {
             <section className={styles.grid}>
                 {
                     productos.map(product=>(
-                        <Article key={productos.id} props={product}></Article>
+                        <Article key={product.id} props={product}></Article>
                     ))
                 }
             </section>

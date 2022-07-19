@@ -1,5 +1,4 @@
 const List = ({props})=>{
-    console.log(props)
     return(
         <ul>
             {props.map(p =>(

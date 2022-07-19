@@ -1,10 +1,9 @@
 import styles from '../styles/Home.module.css'
 
 const Table = ({props, filter})=>{
-    console.log('tabla',props)
     return(
        <>
-        <table className={styles.table}>
+        <table key="table-2" className={styles.table}>
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -15,7 +14,7 @@ const Table = ({props, filter})=>{
             <tbody>
                 {props.filter(e => e.nombre.includes(filter))
                 .map(e=>(
-                    <tr className={styles.tr}>
+                    <tr key={e.id} className={styles.tr}>
                         <td className={styles.td}>{e.nombre}</td>
                         <td>{e.tel}</td>
                         <td>{e.email}</td>

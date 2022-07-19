@@ -31,7 +31,6 @@ const FormEditProduct = ({props})=>{
         event.preventDefault()
         producServices.update(props.id, produc)
         .then(response =>{
-            console.log(response)
             if(response.status == 200){
                 return(
                     window.alert("Cambios realizados")

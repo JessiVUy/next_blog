@@ -10,6 +10,12 @@
     "server": "json-server -p3001 --watch db.json"
   },
   "dependencies": {
+    "@syncfusion/ej2-base": "^20.2.38",
+    "@syncfusion/ej2-dropdowns": "^20.2.38",
+    "@syncfusion/ej2-inputs": "^20.2.38",
+    "@syncfusion/ej2-react-base": "^20.2.38",
+    "@syncfusion/ej2-react-charts": "^20.2.38",
+    "@syncfusion/ej2-react-dropdowns": "^20.2.38",
     "axios": "^0.27.2",
     "next": "12.2.2",
     "react": "18.2.0",
