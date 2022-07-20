@@ -196,5 +196,31 @@
       "cantidad": 1,
       "total": 10
     }
+  ],
+  "List":[
+    {
+      "id": 1,
+      "name": "list1",
+      "quantityElement": 20,
+      "date": "20-01-2022"
+    },
+    {
+      "id": 2,
+      "name": "list2",
+      "quantityElement": 15,
+      "date": "20-01-2022"
+    },
+    {
+      "id": 3,
+      "name": "list3",
+      "quantityElement": 20,
+      "date": "20-01-2022"
+    },
+    {
+      "id": 4,
+      "name": "list4",
+      "quantityElement": 20,
+      "date": "20-01-2022"
+    }
   ]
 }
